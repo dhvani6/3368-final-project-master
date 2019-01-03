@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="665.0" prefWidth="1056.0" style="-fx-background-color: #2f3f4c;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.uh.tech.cis3368.manufacture.controller.CustomerInfoController">
+   <children>
+      <TableView fx:id="customerTable" layoutX="36.0" layoutY="120.0" prefHeight="425.0" prefWidth="985.0" style="-fx-background-color: #9ea3b0;">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="colfName" onEditCommit="#updateFName" prefWidth="75.0" text="First Name" />
+            <TableColumn fx:id="collName" onEditCommit="#updateLName" prefWidth="75.0" text="Last Name" />
+            <TableColumn fx:id="colEmail" onEditCommit="#updateEmail" prefWidth="112.0" text="Email" />
+            <TableColumn fx:id="colAddress" onEditCommit="#updateAddress" prefWidth="74.0" text="Address" />
+            <TableColumn fx:id="colStatus" onEditCommit="#updateStatus" prefWidth="55.0" text="Status" />
+            <TableColumn fx:id="colPrice" prefWidth="76.0" text="Price" />
+            <TableColumn fx:id="colPhoneNumber" onEditCommit="#updatePhoneNumber" prefWidth="98.0" text="Phone Number" />
+            <TableColumn fx:id="colDescription" onEditCommit="#updateDescription" prefWidth="348.0" text="Description" />
+        </columns>
+      </TableView>
+      <Button layoutX="734.0" layoutY="580.0" mnemonicParsing="false" onAction="#delete" prefHeight="64.0" prefWidth="117.0" style="-fx-background-color: #546a7b;" text="Delete" textFill="#e1dede">
+         <font>
+            <Font name="Microsoft JhengHei UI Light" size="12.0" />
+         </font></Button>
+      <Button layoutX="904.0" layoutY="580.0" mnemonicParsing="false" onAction="#back" prefHeight="64.0" prefWidth="117.0" style="-fx-background-color: #546a7b;" text="Back" textFill="#e1dede">
+         <font>
+            <Font name="Microsoft JhengHei Light" size="12.0" />
+         </font></Button>
+      <Label layoutX="265.0" layoutY="26.0" text="Customer Information" textFill="#9ea3b0">
+         <font>
+            <Font name="Microsoft JhengHei Light" size="53.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="80.0" fitWidth="195.0" layoutX="195.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/59bf7c9e7a216d0b052f12bc.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

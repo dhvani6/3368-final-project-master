@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.uh.tech.cis3368.manufacture.controller.FormController">
+   <children>
+      <TextField layoutX="81.0" layoutY="284.0" promptText="Phone Number" />
+      <TextField layoutX="81.0" layoutY="232.0" promptText="Address" />
+      <TextField layoutX="81.0" layoutY="179.0" promptText="Last Name" />
+      <TextField layoutX="81.0" layoutY="127.0" promptText="First Name" />
+      <AnchorPane layoutX="-9.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="682.0" prefWidth="953.0" style="-fx-background-color: #2f3f4c;">
+         <children>
+            <Label layoutX="213.0" layoutY="22.0" text="Customer Information" textFill="#9ea3b0">
+               <font>
+                  <Font name="Microsoft JhengHei Light" size="53.0" />
+               </font>
+            </Label>
+            <TextField fx:id="fNameField" layoutX="157.0" layoutY="145.0" promptText="First Name" />
+            <TextField fx:id="lNameField" layoutX="390.0" layoutY="145.0" promptText="Last Name" />
+            <TextField fx:id="addressField" layoutX="157.0" layoutY="220.0" promptText="Address" />
+            <TextField fx:id="phoneNumberField" layoutX="615.0" layoutY="145.0" promptText="Phone Number" />
+            <TextArea fx:id="descriptionField" layoutX="73.0" layoutY="321.0" prefHeight="237.0" prefWidth="808.0" promptText="Job Description" />
+            <TextField fx:id="priceField" layoutX="390.0" layoutY="220.0" promptText="Total Price" />
+            <Button layoutX="619.0" layoutY="611.0" mnemonicParsing="false" onAction="#save" prefHeight="37.0" prefWidth="142.0" style="-fx-background-color: #546a7b;" text="Create New Job" textFill="#e1dede">
+               <font>
+                  <Font name="Microsoft JhengHei Light" size="15.0" />
+               </font>
+            </Button>
+            <Label fx:id="idOfProject" layoutX="712.0" layoutY="34.0" prefHeight="25.0" prefWidth="60.0" textFill="#d02727" />
+            <Button layoutX="394.0" layoutY="611.0" mnemonicParsing="false" onAction="#back" prefHeight="37.0" prefWidth="142.0" style="-fx-background-color: #546a7b;" text="Back" textFill="#e1dede">
+               <font>
+                  <Font name="Microsoft JhengHei Light" size="15.0" />
+               </font>
+            </Button>
+            <ComboBox fx:id="statusField" layoutX="615.0" layoutY="220.0" prefWidth="150.0" promptText="Status" />
+            <Button layoutX="161.0" layoutY="611.0" mnemonicParsing="false" onAction="#clear" prefHeight="37.0" prefWidth="142.0" style="-fx-background-color: #546a7b;" text="Clear" textFill="#e1dede">
+               <font>
+                  <Font name="Microsoft JhengHei Light" size="15.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="80.0" fitWidth="195.0" layoutX="151.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/59bf7c9e7a216d0b052f12bc.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

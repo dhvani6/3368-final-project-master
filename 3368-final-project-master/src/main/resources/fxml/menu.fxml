@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="681.0" prefWidth="942.0" style="-fx-background-color: #2f3f4c;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.uh.tech.cis3368.manufacture.controller.MenuController">
+   <children>
+      <Button layoutX="134.0" layoutY="185.0" mnemonicParsing="false" onAction="#customerStage" prefHeight="106.0" prefWidth="138.0" style="-fx-background-color: #546a7b;" text="Customer" textFill="#e1dede">
+         <font>
+            <Font name="Microsoft JhengHei Light" size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="402.0" layoutY="185.0" mnemonicParsing="false" onAction="#employeeStage" prefHeight="106.0" prefWidth="138.0" style="-fx-background-color: #546a7b;" text="Employee" textFill="#e1dede">
+         <font>
+            <Font name="Microsoft JhengHei Light" size="23.0" />
+         </font>
+      </Button>
+      <Button layoutX="272.0" layoutY="395.0" mnemonicParsing="false" onAction="#formStage" prefHeight="106.0" prefWidth="138.0" style="-fx-background-color: #546a7b;" text="Customer Form" textFill="#e1dede">
+         <font>
+            <Font name="Microsoft JhengHei Light" size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="540.0" layoutY="395.0" mnemonicParsing="false" onAction="#kanbanStage" prefHeight="106.0" prefWidth="138.0" style="-fx-background-color: #546a7b;" text="Kanban" textFill="#e1dede">
+         <font>
+            <Font name="Microsoft JhengHei Light" size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="670.0" layoutY="185.0" mnemonicParsing="false" onAction="#inventoryStage" prefHeight="106.0" prefWidth="138.0" style="-fx-background-color: #546a7b;" text="Inventory" textFill="#e1dede">
+         <font>
+            <Font name="Microsoft JhengHei Light" size="24.0" />
+         </font>
+      </Button>
+      <Label layoutX="307.0" layoutY="53.0" text="MD" textFill="#9ea3b0">
+         <font>
+            <Font name="Microsoft JhengHei Bold" size="53.0" />
+         </font>
+      </Label>
+      <Label layoutX="401.0" layoutY="53.0" text="Manufacture" textFill="#a9aca9">
+         <font>
+            <Font name="Microsoft JhengHei Light" size="53.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="80.0" fitWidth="195.0" layoutX="238.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/59bf7c9e7a216d0b052f12bc.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
